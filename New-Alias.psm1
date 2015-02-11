@@ -6,10 +6,10 @@ Function New-Alias($name)
     $path = Read-Host "Enter the location where the alias will reside from the list above"
     switch ($path)
     {
-        InternalGroups {$OU = "list/path/to/where/groups/are/stored"}
-        Scripted {$OU = "list/path/to/where/groups/are/stored"}
-        DidItDM {$OU = "list/path/to/where/groups/are/stored"}
-        HLD {$OU = "list/path/to/where/groups/are/stored"}
+        Case1 {$OU = "list/path/to/where/groups/are/stored"}
+        Case2 {$OU = "list/path/to/where/groups/are/stored"}
+        Case3 {$OU = "list/path/to/where/groups/are/stored"}
+        Case4 {$OU = "list/path/to/where/groups/are/stored"}
         other {$OU = Read-Host "Enter the location of where you wish this group to be stored"}
     }
      
